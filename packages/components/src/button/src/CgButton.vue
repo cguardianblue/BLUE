@@ -16,6 +16,7 @@
       <slot />
     </span>
   </button>
+  <div>nihao</div>
 </template>
 <script setup>
 import { useClassName } from "hooks"
