@@ -1,0 +1,71 @@
+.cg-select {
+    color: var(--cg-color-text-light);
+    font-size: var(--cg-select-font-size);
+    position: relative;
+    .cg-select-input-container {
+        position: relative;
+        &.is-disabled {
+            cursor: not-allowed;
+            opacity: 0.5;
+            .cg-select-input {
+                cursor: not-allowed;
+                &:hover {
+                    border-color: var(--cg-color-border);
+                }
+            }
+            
+        }
+        .cg-select-input {
+            outline: none;
+            width: 100%;
+            height: var(--cg-select-height);
+            box-sizing: border-box;
+            padding: 0 25px;
+            border: 1px solid var(--cg-color-border);
+            border-radius: 4px;--cg-color-border-hover: rgba(20, 33, 51, 1);
+            color: var(--cg-color-text-light-hover);
+            font-weight: 500;
+            font-size: var(--cg-select-font-size);
+            cursor: pointer;
+            &:hover {
+                border-color: var(--cg-color-border-hover);
+            }
+        }
+        ::-webkit-input-placeholder {
+            color: var(--cg-color-text-light);
+            font-weight: 400;
+        }
+        .cg-select-icon {
+            width: 0;
+            height: 0;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black white white white;
+            position: absolute;
+            top: 16px;
+            right: 10px;
+            transition: all 0.3s;
+            transform-origin: 50% 2px;
+            &.is-rotate {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .cg-select-options-container {
+        height: 250px;
+        overflow: auto;
+        box-shadow: 3px 1px 10px 0px rgba(0,0,0,0.15);
+        border-radius: 4px;
+        scrollbar-width: none;
+        position: absolute;
+        width: 100%;
+        background-color: var(--cg-color-white);
+        z-index: var(--cg-select-zIndex);
+        padding: 0 25px;
+        top: 50px;
+        // top: calc(var(--cg-select-height) + 10px);
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "cg-ui",
+  "private": false,
+  "version": "1.0.36",
+  "type": "module",
+  "main": "./ui/lib/components/index.js",
+  "module": "./ui/es/components/index.js",
+  "files": [
+    "ui/**/*"
+  ],
+  "scripts": {
+    "build": "vite build -f umd",
+    "build-scss": "gulp -f ./gulp.js"
+  },
+  "sideEffects": [
+    "ui/dist/*",
+    "ui/es/**/styles/*",
+    "ui/lib/**/styles/*",
+    "*.scss"
+  ],
+  "dependencies": {
+    "@ctrl/tinycolor": "^3.6.0",
+    "@vueuse/core": "^10.1.2",
+    "lodash-es": "^4.17.21",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@rollup/pluginutils": "^5.0.2",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^5.1.0",
+    "hooks": "workspace:^1.0.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "1.62.1",
+    "vite": "^4.3.9",
+    "vite-plugin-sass": "^0.1.0",
+    "vite-plugin-style-import": "^2.0.0",
+    "vite-plugin-style-modules": "^0.0.10",
+    "vite-plugin-vue-setup-extend": "^0.4.0"
+  }
+}

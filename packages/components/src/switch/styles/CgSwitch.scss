@@ -1,0 +1,40 @@
+.cg-switch {
+    cursor: pointer;
+    display: inline-flex;
+    &.is-disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+    .cg-switch-bg {
+        background-color: var(--cg-switch-off-color);
+        display: inline-flex;
+        position: relative;
+        align-items: center;
+        min-width: 30px;
+        height: 16px;
+        outline: none;
+        border-radius: 16px;
+        box-sizing: border-box;
+        // cursor: pointer;
+        transition: background-color var(--cg-transition-duration);
+        &.is-active {
+            background-color: var(--cg-switch-on-color); 
+        }
+    }
+    .cg-switch-action {
+        position: absolute;
+        left: 1px;
+        border-radius: 50%;
+        transition: all var(--cg-transition-duration);
+        width: 12px;
+        height: 12px;
+        background-color: var(--cg-color-white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--cg-switch-off-color);
+        &.is-active {
+            left: calc(100% - 13px);
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "hooks",
+  "version": "1.0.1",
+  "description": "",
+  "type": "module",
+  "private": false,
+  "main": "index.js",
+  "module": "index.js",
+  "unpkg": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "locale": "workspace:^1.0.0",
+    "cg-ui": "workspace:^1.0.22"
+  }
+}

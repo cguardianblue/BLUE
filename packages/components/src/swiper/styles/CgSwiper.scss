@@ -1,0 +1,125 @@
+.cg-swiper {
+    position: relative;
+    z-index: 100;
+    &.cg-swiper__horizontal {
+        overflow-x: hidden;
+    }
+    &.cg-swiper__vertical {
+        overflow-y: hidden;
+    }
+    .cg-swiper__container {
+        position: relative;
+        height: 300px;
+    }
+    .cg-swiper__arrow {
+        border: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        height: 36px;
+        width: 36px;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 50%;
+        background-color: rgba(31, 45, 61, .11);
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        transform: translateY(-50%);
+        text-align: center;
+        font-size: 18px;
+        z-index: 30;
+        &.cg-swiper__left {
+            left: 16px;
+        }
+        &.cg-swiper__right {
+            right: 16px;
+        }
+        &:hover {
+            background-color: rgba(31, 45, 61, .23)
+        }
+    }
+    .cg-swiper__indicators {
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        line-height: 1.7;
+        z-index: 200;
+    }
+    .cg-swiper__indicators--horizontal {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .cg-swiper__indicators--vertical {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .cg-swiper__indicators-outside {
+      text-align: center;
+      position: static;
+      transform: none;
+      .cg-swiper__button {
+          background-color: #d3dce6;
+      }
+      &.active {
+        button {
+            opacity: 1;
+        }
+      }
+    }
+    
+    .cg-swiper__indicator-horizontal {
+        display: inline-block;
+        padding: 12px 6px;
+        background-color: transparent;
+        cursor: pointer;
+        &.active {
+            button {
+                opacity: 1;
+            }
+        }
+    }
+    .cg-swiper__indicator-vertical {
+        padding: 3px 6px;
+        background-color: transparent;
+        cursor: pointer;
+        &.active {
+            button {
+                opacity: 1;
+            }
+        }
+        .cg-swiper__button {
+            width: 2px;
+            height: 17px;
+        }
+    }
+    
+    .cg-swiper__button {
+        display: block;
+        opacity: 0.48;
+        width: 18px;
+        height: 2px;
+        background-color: #fff;
+        border: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .swiper-arrow-left-enter-from,
+    .swiper-arrow-left-leave-active {
+      transform: translateY(-50%) translateX(-10px);
+      opacity: 0;
+    }
+    
+    .swiper-arrow-right-enter-from,
+    .swiper-arrow-right-leave-active {
+      transform: translateY(-50%) translateX(10px);
+      opacity: 0;
+    }
+}

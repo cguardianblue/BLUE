@@ -1,0 +1,27 @@
+.cg-pagination-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--cg-pagination-font-size);
+    min-width: var(--cg-pagination-height);
+    height: var(--cg-pagination-height);
+    line-height: var(--cg-pagination-height);
+    color: var(--cg-color-text);
+    background: var(--cg-color-white);
+    padding: 0 4px;
+    border: none;
+    border-radius: var(--el-pagination-border-radius);
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    &.is-disabled {
+        color: var(--cg-color-main-disabled);
+        cursor: not-allowed;
+        &:hover {
+            color:var(--cg-color-main-disabled); 
+        }
+    }
+    &:hover {
+        color:var(--cg-color-main); 
+    }
+}

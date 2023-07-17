@@ -1,0 +1,33 @@
+:root {
+    --cg-color-main:rgba(167, 56, 67, 1);
+    --cg-color-main-hover:rgba(145, 52, 65, 1);
+    --cg-color-main-border: rgba(167, 56, 67, 0.40);
+    --cg-color-main-border-hover: rgba(145, 52, 65, 1);
+    --cg-color-main-disabled: rgba(20, 33, 51, 0.20);
+    --cg-color-white: #fff;
+    --cg-color-text: rgba(67, 77, 92, 1);
+    --cg-color-text-hover: rgba(67, 77, 92, 1);
+    --cg-color-text-light: rgba(117, 128, 143, 1);
+    --cg-color-text-light-hover: rgba(20, 33, 51, 1);
+    --cg-color-border: rgba(175, 177, 196, 0.40);
+    --cg-color-border-hover: rgba(20, 33, 51, 1);
+    --cg-color-border-light: rgba(175, 177, 196, 0.20);
+    --cg-color-border-dark: rgba(20, 33, 51, 1);
+    --cg-pagination-font-size: 14px;
+    --cg-pagination-height: 30px;
+    --cg-select-font-size: 14px;
+    --cg-select-height:40px;
+    --cg-select-zIndex: 900;
+    --cg-steps-fontSize: 18px;
+    --cg-steps-text-color: rgba(175, 177, 196, 1);
+    --cg-timeLine-title-color: rgba(67, 77, 92, 1);
+    --cg-timeLine-title-fontSize: 18px;
+    --cg-timeLine-text-color: rgba(175, 177, 196, 1);
+    --cg-timeLine-text-fontSize: 16px;
+    --cg-switch-off-color: RGBA(170, 175, 183, 1);
+    --cg-switch-on-color: rgba(74, 167, 107, 1);
+    --cg-transition-duration: 0.3s;
+    --cg-slider-bg: rgba(245, 245, 245, 1);
+    --cg-slider-runway-bg-color: rgba(216, 216, 216, 1);
+    --cg-slider-bar-bg-color: rgba(167, 56, 67, 1);
+}

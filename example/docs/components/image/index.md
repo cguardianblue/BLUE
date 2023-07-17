@@ -7,10 +7,10 @@
 ###
 
 <div style="width:200px;height:200px;">
-    <cg-image src="https://deveop.cguardian.com/images/GD-2023-CN005/GD-2023-CN005-008-001.jpg?t=0.7599900132232524" fit="contain" defaultSrc="./images/image.svg"> </cg-image>
+    <cg-image src="https://deveop.cguardian.com/images/GD-2023-CN005/GD-2023-CN005-008-001.jpg?t=0.7599900132232524" fit="contain" defaultSrc="./images/image.jpeg"> </cg-image>
 </div>
 <div style="width:200px;height:200px;">
-    <cg-image src="https://develop.cguardian.com/images/GD-2023-CN005/GD-2023-CN005-008-001.jpg?t=0.7599900132232524" fit="contain" defaultSrc="./images/image.svg"> </cg-image>
+    <cg-image src="https://develop.cguardian.com/images/GD-2023-CN005/GD-2023-CN005-008-001.jpg?t=0.7599900132232524" fit="contain" defaultSrc="./images/image.jpeg"> </cg-image>
 </div>
 
 ::: details 显示代码

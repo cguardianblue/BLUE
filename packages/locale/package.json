@@ -1,0 +1,14 @@
+{
+  "name": "locale",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "private": false,
+  "main": "index.js",
+  "module": "index.js",
+  "unpkg": "index.js",
+  "jsdelivr": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

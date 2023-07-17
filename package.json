@@ -1,0 +1,50 @@
+{
+  "private": true,
+  "author": "",
+  "scripts": {
+    "build": "pnpm run -F cg-ui build",
+    "build-scss": "pnpm run -F cg-ui build-scss",
+    "example-serve": "pnpm run -F example dev",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
+    "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "{!(package)*.json,*.code-snippets,}": [
+      "prettier --write--parser json",
+      "git add"
+    ],
+    "package.json": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.vue": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.{scss,less,styl,html}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.md": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.14.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8"
+  }
+}

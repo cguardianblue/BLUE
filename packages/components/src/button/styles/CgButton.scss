@@ -1,0 +1,87 @@
+.cg-button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    // min-height will expand when in flex
+    height: 40px;
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.1s;
+    font-weight: 400;
+    user-select: none;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    padding: 8px 15px;
+    color: var(--cg-color-white);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 13px;
+    &.is-round {
+        border-radius: 20px;
+    }
+    &.cg-button-size-large {
+        border-radius: 25px;
+        line-height: 1;
+        // min-height will expand when in flex
+        height: 50px;
+        font-size: 15px;
+    }
+    &.cg-button-type-default {
+        border: none;
+        background-color: var(--cg-color-main);
+        &:hover {
+            background-color: var(--cg-color-main-hover);
+        }
+        &:disabled {
+            background-color: var(--cg-color-main-disabled);
+            cursor: not-allowed;
+        }
+    }
+    &.cg-button-type-plain-dark {
+        background-color: var(----cg-color-white);
+        border-color: var(--cg-color-border);
+        color:var(--cg-color-text);
+        &:hover {
+            border-color: var(--cg-color-border-hover);
+        }
+        &:disabled {
+            border-color: var(--cg-color-border);
+            opacity: 0.55;
+            cursor: not-allowed;
+        }
+    }
+    &.cg-button-type-plain-light {
+        background-color: var(----cg-color-white);
+        border-color: var(--cg-color-main-border);
+        color:var(--cg-color-main);
+        &:hover {
+            border-color: var(--cg-color-main-border-hover);
+        }
+        &:disabled {
+            border-color: var(--cg-color-main-border);
+            opacity: 0.55;
+            cursor: not-allowed;
+        }
+    }
+    &.cg-button-type-text {
+        border: none;
+        color:var(--cg-color-text);
+        background-color: var(--cg-color-white);
+        &:hover {
+            color:var(--cg-color-text);
+            background-color: var(--cg-color-white);
+        }
+        &:disabled {
+            color:var(--cg-color-text);
+            background-color: var(--cg-color-white);
+            opacity: 0.55;
+            cursor: not-allowed;
+        }
+    }
+}

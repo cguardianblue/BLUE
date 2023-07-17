@@ -1,0 +1,31 @@
+.cg-swiper__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 10;
+  &.cg-swiper__animating {
+    transition: transform 0.4s ease-in-out;
+    z-index: 20;
+  }
+  &.cg-swiper__active {
+    z-index: 20;
+  }
+  .cg-swiper__item-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0.24;
+    transition: all 0.3s;
+  }
+}
+.cg-swiper__card {
+  width: 50%;
+  transition: transform 0.4s ease-in-out;
+}
