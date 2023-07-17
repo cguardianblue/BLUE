@@ -68,7 +68,7 @@
 
 #### 2.3 根目录下面执行 pnpm run build-scss, 打包子模块组件库样式代码到 components/ui 文件夹下面。
 
-#### 2.3 根目录下面执行 pnpm run example-serve, 运行 vitepress 本地服务查看组件，默认端口号 5273。
+#### 2.3 根目录下面执行 pnpm run example-serve, 运行 vitepress 本地服务查看组件，默认端口号 5173。
 
 ## 3.新增组件后的验证及测试
 
@@ -77,5 +77,3 @@
 #### 3.2 根目录下面执行 pnpm run build-scss, 打包子模块组件库样式代码到 components/ui 文件夹下面。
 
 #### 3.3 在 example 子模块的 docs 目录下对应建新组件的文件夹，写测试代码即可
-
-

@@ -7,8 +7,8 @@
 ```
 // main.js
 import { createApp } from 'vue'
-import CgUi from 'cg-ui'
-import "cg-ui/ui/dist/style.css"
+import CgUi from '@cguardian/cg-ui'
+import "@cguardian/cg-ui/ui/dist/style.css"
 import App from './App.vue'
 
 const app = createApp(App)
@@ -38,8 +38,8 @@ export default defineConfig({
     AutoImport({
       imports: [
         {
-          "cg-ui/ui/es/components/src/toast/index.js": ["createToast"],
-          "cg-ui/ui/es/components/src/dialog/index.js": ["createDialog"],
+          "@cguardian/cg-ui/ui/es/components/src/toast/index.js": ["createToast"],
+          "@cguardian/cg-ui/ui/es/components/src/dialog/index.js": ["createDialog"],
         },
       ],
     }),
@@ -52,12 +52,12 @@ export default defineConfig({
             let str = name.slice(2);
             str = str.replace(str[0], str[0].toLowerCase());
             // 对应组件导出位置
-            const path = `cg-ui/ui/es/components/src/${str}`;
+            const path = `@cguardian/cg-ui/ui/es/components/src/${str}`;
             return {
               name,
               from: path,
               // 组件对应的css文件
-              sideEffects: `cg-ui/ui/es/components/src/${str}/styles/${name}.css`,
+              sideEffects: `@cguardian/cg-ui/ui/es/components/src/${str}/styles/${name}.css`,
             };
           },
         },
@@ -109,7 +109,7 @@ export default defineConfig({
             let dirNewStr =
               "Cg" + newStr.replace(newStr[0], newStr[0].toUpperCase());
             // use scss
-            return `cg-ui/ui/es/components/src/${newStr}/styles/${dirNewStr}.css`;
+            return `@cguardian/cg-ui/ui/es/components/src/${newStr}/styles/${dirNewStr}.css`;
           },
         },
       ],

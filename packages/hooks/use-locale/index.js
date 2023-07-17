@@ -1,5 +1,5 @@
 import { computed, reactive, inject } from "vue"
-import { configProviderKey } from "cg-ui/src/configProvider/src/ConfigProviderProps"
+import { configProviderKey } from "@cguardian/cg-ui/src/configProvider/src/ConfigProviderProps"
 import cn from "locale/zh.js"
 import en from "locale/en.js"
 const I18N_MESSAGES = reactive({

@@ -6,10 +6,10 @@
 
 ```
 # npm
-$ npm install cg-ui
+$ npm install @cguardian/cg-ui
 
 # pnpm
-$ pnpm install cg-ui
+$ pnpm install @cguardian/cg-ui
 
 ```
 

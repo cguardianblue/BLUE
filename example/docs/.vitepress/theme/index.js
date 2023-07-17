@@ -1,6 +1,6 @@
 import DefaultTheme from "vitepress/theme"
-import cg from "cg-ui"
-import "cg-ui/ui/dist/style.css"
+import cg from "@cguardian/cg-ui"
+import "@cguardian/cg-ui/ui/dist/style.css"
 export default {
   ...DefaultTheme,
   enhanceApp: async ({ app }) => {

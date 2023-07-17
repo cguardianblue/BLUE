@@ -12,6 +12,6 @@
   "license": "ISC",
   "devDependencies": {
     "locale": "workspace:^1.0.0",
-    "cg-ui": "workspace:^1.0.22"
+    "@cguardian/cg-ui": "workspace:^1.0.0"
   }
 }
