@@ -1,8 +1,21 @@
 {
-  "name": "cg-ui",
+  "name": "@cguardian/cg-ui",
   "private": false,
-  "version": "1.0.36",
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "https://github.com/cguardianblue/BLUE",
+  "bugs": {
+    "url": "https://github.com/cguardianblue/BLUE/issues"
+  },
+  "author": "cguardian web",
+  "keywords": [
+    "cg-ui",
+    "cguardian",
+    "component library",
+    "ui framework",
+    "ui",
+    "vue"
+  ],
   "main": "./ui/lib/components/index.js",
   "module": "./ui/es/components/index.js",
   "files": [
